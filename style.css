@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+:root {
+  --purple: #7743db;
+  --white: #fff;
+  --black: #000;
+  --gray: #625e5e;
+  --transition: all 0.4s linear;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--purple);
+  font-family: "Poppins", sans-serif;
+}
+
+#quote-container {
+  text-align: center;
+  font-size: 20px;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  background-color: var(--white);
+}
+
+#quote-text {
+  color: var(--gray);
+  font-size: 1rem;
+}
+
+#quote-container h1 {
+  font-size: 40px;
+}
+
+#button-container {
+  margin-top: 20px;
+}
+
+i {
+  color: var(--gray);
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5rem;
+  border: 0.15rem solid transparent;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  color: var(--white);
+  background-color: var(--purple);
+}
+
+.btn-secondary {
+  color: #00000089;
+  background-color: transparent;
+  border-color: #00000089;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #612fbe;
+  border-color: transparent;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #612fbe;
+  border-color: transparent;
+}
+
+.icon i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 16px;
+  border: 0.1rem solid var(--purple);
+  color: var(--purple);
+  background-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.icon i:hover,
+.icon i:focus {
+  color: var(--white);
+  background-color: var(--purple);
+}
+
+.btn-primary.loading {
+  opacity: 0.4;
+}
