@@ -12,13 +12,16 @@
   box-sizing: border-box;
 }
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
   margin: 0;
   background-color: var(--purple);
   font-family: "Poppins", sans-serif;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 #quote-container {
@@ -46,26 +49,16 @@ i {
   color: var(--gray);
 }
 
-.btn-primary,
-.btn-secondary {
+.btn-primary {
   padding: 10px 20px;
   font-weight: 500;
   font-size: 14px;
   cursor: pointer;
   border-radius: 5rem;
-  border: 0.15rem solid transparent;
-  transition: var(--transition);
-}
-
-.btn-primary {
   color: var(--white);
   background-color: var(--purple);
-}
-
-.btn-secondary {
-  color: #00000089;
-  background-color: transparent;
-  border-color: #00000089;
+  border: 0.15rem solid transparent;
+  transition: var(--transition);
 }
 
 .btn-primary:hover,
@@ -74,11 +67,6 @@ i {
   border-color: transparent;
 }
 
-.btn-secondary:hover,
-.btn-secondary:focus {
-  background-color: #612fbe;
-  border-color: transparent;
-}
 
 .icon i {
   width: 40px;
@@ -102,4 +90,47 @@ i {
 
 .btn-primary.loading {
   opacity: 0.4;
+}
+
+.footer p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer p a {
+    text-decoration: none;
+    font-weight: light;
+    
+    transition: var(--transition);
+    color: var(--purple);
+}
+
+.footer p a:hover , .footer p a:focus {
+    text-decoration: underline;
+}
+
+@media (max-width : 500px) {
+    #quote-container {
+        padding: 2rem;
+    }
+    #quote-container h1 {
+        font-size: 30px;
+      }
+
+      .icon i {
+        width: 35px ;
+        height: 35px ;
+        line-height: 35px ;
+        font-size: 14px;
+      }
+
+      .btn-primary {
+        padding: 10px 15px;
+        font-size: 13px ;
+      }
+      
+.footer p {
+    font-size: 12px;
+    font-weight: 500;
+}
 }
